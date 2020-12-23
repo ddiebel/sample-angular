@@ -1,0 +1,9 @@
+spec:
+  name: sample-angular
+  services:
+    - build_command: yarn build
+      environment_slug: node-js
+      git:
+        branch: master
+        repo_clone_url: https://github.com/ddiebel/sample-angular.git
+      name: sample-angular

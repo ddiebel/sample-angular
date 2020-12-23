@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "start": "node sammy.js; serve -s _static -l tcp://0.0.0.0:$PORT -n",
-    "build": "rm -r _static 2>/dev/null; node sammy.js; ng build && mv dist/sample-angular _static",
-    "build:plain": "ng build",
+    "build": "rm -r _static 2>/dev/null; node sammy.js; ng build --prod && mv dist/sample-angular _static",
     "ng": "ng",
     "test": "ng test",
     "lint": "ng lint",
