@@ -22,11 +22,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Checkout
       - uses: actions/checkout@v2
-      
-      - name: Clean Install
-      - uses: npm ci
-      
-      - name: Run Tests
-      - uses: npm run test
+      - name: Install modules
+        run: npm ci
+      - name: Run tests
+        run: npm run test
